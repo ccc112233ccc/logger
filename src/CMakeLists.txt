@@ -1,0 +1,9 @@
+
+project(logger_lib)
+
+
+SET(LOGGER_SRC logger.cc)
+SET(LOGGER_INC logger.hpp)
+
+#ADD_LIBRARY(logger SHARED LOGGER_INC LOGGER_SRC)
+ADD_LIBRARY(logger STATIC  ${LOGGER_SRC} ${LOGGER_INC})
